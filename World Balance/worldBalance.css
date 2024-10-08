@@ -1,0 +1,223 @@
+*{
+    border:0;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+#Nav-bar{
+    background-color:black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70px;
+    padding-right:1% ;
+}
+#LOGO{
+    display: inline-block;
+    height: 50px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+#Nav-bar ul{
+    background-color:black;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#Nav-bar a{
+    background-color:black;
+    color:antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 15px;
+    display: block; 
+    /* height: 70px; */
+}
+#Nav-bar a:hover{
+    background-color: hwb(0 55% 45%);
+}
+#mainDiv{
+    background-image: url(https://worldbalance.com.ph/cdn/shop/files/PUTBACKlifestylephotos_1080x.png?v=1714717120);
+    background-size: contain;
+    background-position: center;
+    /* background-color: aqua; */
+    height: 120vh;
+    display: flex;
+
+}
+#bg{
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5); 
+    height:120vh;
+    flex-wrap: wrap;
+}
+.slideshow-container {
+    position: relative;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    color:black;
+    font-size: 25px;
+}
+.text {
+    color: hsl(0, 0%, 0%);
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: grey;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+.shoe-content{
+    padding: 2%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.image{
+    height: 450px;
+    width: 450px;
+}
+.text-content{
+    margin-top: 6%;
+    padding-top: 3%;
+    margin-left: 1%;
+    flex-wrap: wrap;
+}
+#heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color:white;
+}
+.sub-heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    color:white;
+}
+.shoppingcart{
+    height: 30px;
+    width: 30px;
+}
+.shoppingcart:hover{
+    cursor: pointer;
+}
+.color{
+    font-size: larger;
+    padding: 3%;
+    width: 150px;
+    background-color: #ffffff;
+    color: #000000;
+}
+.color:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+#size{
+    align-items: center;
+    display: flex; 
+}
+.sizes{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 10px; 
+    border: 1.5px solid black;
+}
+.sizes:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #ffffff;
+} 
+.button{
+    font-size: x-large;
+    padding: 4%;
+    width: 450px;
+    background-color: black;
+    color: #ffffff;
+    margin-bottom: 2%;
+}
+.button:hover{
+    background-color: #e0e003;
+    color: black;
+    outline: 1px solid black;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-left: 14rem;
+    gap: 10px;
+}
+.display{
+    height: 150px;
+    width:150px;
+    outline: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+}
+.display:hover{
+    scale: 1.2 ;
+    cursor: pointer;
+    transition:  0.3s ease;
+}

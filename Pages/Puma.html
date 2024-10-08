@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <link rel="stylesheet" href="../Stylesheet/puma.css">
+    <link rel="icon" href="https://www.waterfront.co.za/wp-content/uploads/2018/05/puma-1.jpg">
+</head>
+<body>
+    <div id="Nav-bar">
+        <img src="https://www.logodesignvalley.com/blog/wp-content/uploads/2023/05/puma-2.png" alt="" id="LOGO"> 
+        <ul id="links">
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+   </div>
+   <div id="mainDiv">
+        <section class="right"> 
+            <div><img src="https://classic.cdn.media.amplience.net/i/hibbett/G2860_0141_right2/PUMA%20Scoot%20Zero%20%22O.D.D%20City%22%20Preschool%20Kids'%20Basketball%20Shoe-0141?$small$&fmt=webp" alt="" class="display"></div>
+            <div><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396658/02/sv01/fnd/PHL/fmt/png/PUMA-x-PLAYSTATION-RS-X-Sneakers-Kids" alt="" class="display"></div>
+            <div><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/374915/05/sv01/fnd/PHL/fmt/png/Suede-Classic-XXI-Trainers" alt="" class="display"></div>
+            <div><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/386607/01/sv01/fnd/PHL/fmt/png/Army-Trainer-Sneakers" alt="" class="display"></div>
+        </section>
+        <section class="shoe-content">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://cdna.lystit.com/photos/puma/f3510ad5/puma-Black-For-All-Time-Red-Scoot-Zeros-ODD-City-Basketball-Shoes.jpeg" alt="" class="image">
+                    <div class="text">$1499</div>
+                </div>        
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/309841/01/sv01/fnd/PHL/fmt/png/PUMA-x-2K-Scoot-Zeros-Basketball-Shoes" class="image">
+                    <div class="text">$1499</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396246/01/sv01/fnd/PHL/fmt/png/PUMA-x-PLAYSTATION-Suede-Sneakers"class="image">
+                    <div class="text">$1999</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center; bottom: 70px; position: relative;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div id="addtocart">
+                <div><button class="button">Add to Cart</button></div>
+                <div><button class="button"> Buy now</button></div>      
+            </div>
+        </section >
+        <section class="text-content">
+            <div id="heading">Basketball Shoes</div>
+            <div class="sub-heading"> 563 stocks available</div>
+            <span style="color:hsl(0, 0%, 3%); "> &star; 5%</span>
+
+            <div class="subheading" style="margin-top: 50px;"> Color</div>
+            <div> 
+                <button class="color"> Blue</button>
+                <button class="color">Black</button>
+            </div>
+
+            <div class="subheading">Sizes</div>
+            <div id="size">
+                <div class = "sizes">
+                    <h3>36</h3>
+                </div>    
+                <div class = "sizes">
+                    <h3>37</h3>
+                </div>     
+                <div class = "sizes">
+                    <h3>38</h3>
+                </div>     
+                <div class = "sizes">
+                    <h3>39</h3>
+                </div>      
+                <div class = "sizes">
+                    <h3>40</h3>
+                </div>  
+            </div>
+        </section>
+
+    </div>
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+</html>

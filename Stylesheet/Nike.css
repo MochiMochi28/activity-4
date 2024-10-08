@@ -1,0 +1,145 @@
+*{
+    border:0;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+#Nav-bar{
+    background-color:black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70px;
+    padding-right:1% ;
+}
+#LOGO{
+    display: inline-block;
+    height: 50px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+#Nav-bar ul{
+    background-color:black;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#Nav-bar a{
+    background-color:black;
+    color:antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 15px;
+    display: block; 
+    /* height: 70px; */
+}
+#Nav-bar a:hover{
+    background-color: hwb(0 55% 45%);
+}
+#mainDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.shoe-content{
+    padding: 2%;
+    width: 35%;
+    margin-top: 5%;
+}
+.image{
+    height: 60%;
+    width: 95%;
+    margin-bottom: 6%;
+}
+.text-content{
+    margin-top: 6%;
+    padding-top: 3%;
+    margin-left: 1%;
+    flex-wrap: wrap;
+}
+#heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color:black;
+}
+.sub-heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    margin-top: 5px;
+}
+.subheading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+    margin-top: 5px;
+    margin-bottom: 1%;
+}
+.color{
+    font-size: larger;
+    padding: 3%;
+    width: 150px;
+    background-color:white;
+    color: #000000;
+    margin-bottom: 5%;
+
+}
+.color:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+#size{
+    align-items: center;
+    display: flex; 
+}
+.sizes{
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 10px; 
+    border: 1.5px solid black;
+}
+.sizes:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #ffffff;
+}
+.button{
+    font-size: x-large;
+    padding: 4%;
+    width: 450px;
+    background-color: black;
+    color: #ffffff;
+    margin-bottom: 2%;
+}
+.button:hover{
+    background-color: #e0e003;
+    color: black;
+    outline: 1px solid black;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-left: 14rem;
+    gap: 10px;
+}
+.display{
+    height: 150px;
+    width:150px;
+    outline: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+}
+.display:hover{
+    scale: 1.2 ;
+    cursor: pointer;
+    transition:  0.3s ease;
+}

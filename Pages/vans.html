@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANS</title>
+    <link rel="stylesheet" href="../Stylesheet/vans.css">
+    <link rel="icon" href="https://cdn.mos.cms.futurecdn.net/homc7Eo34w2w2BRdP8kTTb-1200-80.jpg">
+</head>
+<body>
+    <div id="Nav-bar">
+        <img src="https://logos-world.net/wp-content/uploads/2020/05/Vans-Logo-1966.png" alt="" id="LOGO"> 
+        <ul id="links">
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+   </div>
+   <div id="mainDiv">
+        <section class="shoe-content">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://trilogymerchph.com/cdn/shop/products/true-white-slip-ons-3_1200x1200.png?v=1571737961"class="image">
+                    <div class="text">$1499</div>
+                </div>        
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://kineticskateboarding.com/cdn/shop/files/vans-sk8-hi-navy_2_1800x1800.png?v=1705517026" class="image">
+                    <div class="text">$1499</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://i.ebayimg.com/images/g/NWQAAOSwQhhktuWR/s-l400.jpg" alt="" class="image">
+                    <div class="text">$2499</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center; bottom: 70px; position: relative;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div id="addtocart">
+                <div><button class="button">Add to Cart</button></div>
+                <div><button class="button"> Buy now</button></div>      
+            </div>
+        </section >
+        <section class="text-content">
+            <div id="heading">Slide On</div>
+            <div class="sub-heading"> 529 stocks available</div>
+            <span style="color:hsl(0, 0%, 3%); "> &star; 5%</span>
+
+            <div class="subheading" style="margin-top: 50px;"> Color</div>
+            <div> 
+                <button class="color"> White</button>
+                <button class="color">Black</button>
+            </div>
+
+            <div class="subheading">Sizes</div>
+            <div id="size">
+                <div class = "sizes">
+                    <h3>37</h3>
+                </div>    
+                <div class = "sizes">
+                    <h3>38</h3>
+                </div>     
+                <div class = "sizes">
+                    <h3>39</h3>
+                </div>     
+                <div class = "sizes">
+                    <h3>40</h3>
+                </div>      
+                <div class = "sizes">
+                    <h3>41</h3>
+                </div>  
+            </div>
+        </section>
+        <section class="right"> 
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL0sIUY7wONmrDex9CVRDfEo50MkCWUd8d5A_vtdnBzYbMl-C6S0qMhLKtDGWI02uX1Xs&usqp=CAU" alt="" class="display"></div>
+            <div><img src="https://i.pinimg.com/736x/ef/cc/c2/efccc2c44d56902d7821022daa7d2bd9.jpg" alt="" class="display"></div>
+            <div><img src="https://i.ebayimg.com/images/g/V80AAOSw76xi29eT/s-l1200.jpg" alt="" class="display"></div>
+            <div><img src="https://i.pinimg.com/736x/b2/87/58/b287588723e6d4705bd643ced56e94e4.jpg" alt="" class="display"></div>
+        </section>
+
+    </div>
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World balance</title>
+    <link rel="stylesheet" href="worldBalance.css">
+    <link rel="icon" href="https://worldbalance.com.ph/cdn/shop/files/WB_Logo.png?v=1635494104">
+</head>
+<body>
+    <div id="Nav-bar">
+        <img src="../logo.png" alt="" id="LOGO"> 
+       <ul id="links">
+           <li><a href="../index.html">Home</a></li>
+       </ul>
+   </div>
+
+   <div id="mainDiv">
+        <div id="bg">
+            <div class="shoe-content">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="https://worldbalance.com.ph/cdn/shop/files/WBPUTBACKMBLACK_7_1400x.jpg?v=1716181730" alt="" class="image">
+                        <div class="text">$1027</div>
+                    </div>        
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="https://worldbalance.com.ph/cdn/shop/products/WBREVELRYLWHITE-PINK_5_1400x.jpg?v=1716445158" class="image">
+                        <div class="text">$1499</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="https://worldbalance.com.ph/cdn/shop/files/RemiM-Black-7_1080x.jpg?v=1714013871"class="image">
+                        <div class="text">$1077</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                    
+                <div id="addtocart">
+                    <div><button class="button">Add to Cart</button></div>
+                    <div><button class="button"> Buy now</button></div>
+                    <!-- <img src="https://icons.veryicon.com/png/o/miscellaneous/small-icons-1/ic-add-to-cart.png" alt="" class="shoppingcart" > -->
+                </div>
+            </div>
+                
+            <div class="text-content">
+                <div id="heading">World Balance</div>
+                <div class="sub-heading"> 963 stocks left</div>
+                <span style="color:yellow;"> &star; 5%</span>
+
+                <div style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white; font-size: 40px; margin-top: 10%;">Color</div>
+                <div> 
+                    <button class="color"> Black</button>
+                    <button class="color">White</button>
+                </div>
+                <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white; font-size: 30px; margin-top: 1%;">Sizes</div>
+                <div id="size">
+                    <div class = "sizes">
+                        <h3>42</h3>
+                    </div>    
+                    <div class = "sizes">
+                        <h3>42</h3>
+                    </div>     
+                    <div class = "sizes">
+                        <h3>43</h3>
+                    </div>     
+                    <div class = "sizes">
+                        <h3>44</h3>
+                    </div>      
+                    <div class = "sizes">
+                        <h3>45</h3>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="right"> 
+                <img src="https://worldbalance.com.ph/cdn/shop/files/WBEXOSHELLMBLACK_1_720x.jpg?v=1700630403" alt="" class="display">
+                <img src="https://worldbalance.com.ph/cdn/shop/products/WBPANTONERUNNERKIDSWHITE_1.jpg?v=1716451802" alt="" class="display">
+                <img src="https://worldbalance.com.ph/cdn/shop/files/NitroBlk-2_1080x.jpg?v=1716434193" alt="" class="display">
+                <img src="https://worldbalance.com.ph/cdn/shop/files/WBSPEEDRUNNERMWHITE-GREEN_1_661eaa7b-8472-45cc-bf78-72ed3ca8a7e8_1400x.jpg?v=1716959808" alt="" class="display">
+            </div>
+
+        </div>
+   </div>
+
+   <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+   </script>
+
+
+</body>
+</html>

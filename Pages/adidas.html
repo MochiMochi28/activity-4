@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas</title>
+    <link rel="stylesheet" href="../Stylesheet/puma.css">
+    <link rel="icon" href="https://cdn.britannica.com/94/193794-050-0FB7060D/Adidas-logo.jpg">
+</head>
+<body>
+    <div id="Nav-bar">
+        <img src="https://devel.prom.uz/upload/brand_logos/12.2022/adidas.png" alt="" id="LOGO"> 
+        <ul id="links">
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+   </div>
+   <div id="mainDiv">
+        <section class="right"> 
+            <div><img src="https://www.kickgame.com/cdn/shop/products/Yeezy-Boost-700-EG7487-Salt_1.png?v=1659040459" alt="" class="display"></div>
+            <div><img src="https://image-raw.reversible.com/raw_images/7e4e60e55f6115520b4af687325f5fc713e03b80a81ec46bcd00d9a98d7d4f01" alt="" class="display"></div>
+            <div><img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7c719cea73074b4fb8e6acd2011e1a6f_9366/Forum_84_Hi_Shoes_White_H01670_01_standard.jpg" alt="" class="display"></div>
+            <div><img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/6a1f051891c044798fcda8eb00f73d18_9366/Nizza_High_Top_Shoes_Black_B41651_01_standard.jpg" alt="" class="display"></div>
+        </section>
+        <section class="shoe-content">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/5a6e38e1838140b9a337fd76ecf04d5c_9366/Ultrabounce_Shoes_White_IE0715_01_standard.jpg" alt="" class="image">
+                    <div class="text">$1499</div>
+                </div>        
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/225049720e9041279d52bc632815e236_9366/Hoops_3.0_Mid_Lifestyle_Basketball_Classic_Vintage_Shoes_White_IH0157_01_standard.jpg" class="image">
+                    <div class="text">$1956</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/f45be822c4f44431b9bc2f0dcb5f78e6_9366/Superstar_Shoes_White_IF7610_09_standard.jpg"class="image">
+                    <div class="text">$1240</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center; bottom: 70px; position: relative;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div id="addtocart">
+                <div><button class="button">Add to Cart</button></div>
+                <div><button class="button"> Buy now</button></div>      
+            </div>
+        </section >
+        <section class="text-content">
+            <div id="heading">Indoor Shoes</div>
+            <div class="sub-heading"> 2000 stocks available</div>
+            <span style="color:hsl(0, 0%, 3%); "> &star; 5%</span>
+
+            <div class="subheading" style="margin-top: 50px;"> Color</div>
+            <div> 
+                <button class="color"> White</button>
+                <button class="color">Black</button>
+            </div>
+
+            <div class="subheading">Sizes</div>
+            <div id="size">
+                <div class = "sizes">
+                    <h3>37</h3>
+                </div>    
+                <div class = "sizes">
+                    <h3>37</h3>
+                </div>     
+                <div class = "sizes">
+                    <h3>39</h3>
+                </div>     
+                <div class = "sizes">
+                    <h3>40</h3>
+                </div>      
+                <div class = "sizes">
+                    <h3>41</h3>
+                </div>  
+            </div>
+        </section>
+
+    </div>
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+</html>
